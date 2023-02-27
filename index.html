@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .box-titulo {
+                padding: 3em;
+                text-align: center;
+                font-size: 1.2em;
+                background-color: #2E3840;
+                color: white;
+                font-weight: bold;
+            }
+
+            .box-inputs {
+                padding: 1.5em;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .box-inputs [type=text] {
+                padding: 1em;
+                width: 400px;
+            }
+
+            .box-inputs [type=number] {
+                padding: 1em;
+                width: 400px;
+            }
+
+            button {
+                background-color: #2E3840;
+                color: white;
+                width: 20%;
+            }
+
+            .box-somavalores {
+                border: 1px solid #2E3840;
+                padding: 1em;
+                margin-top: 1em;
+                margin-left: 70px;
+                margin-right: 70px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box-titulo">LISTA DE COMPRAS</div>
+        <div class="box-inputs">
+            <input type="text"
+             placeholder="Digite o produto..."
+             name="inp-produto">
+             <input type="number"
+             placeholder="Digite o valor..."
+             name="inp-valor">
+            <button type="submit">Enviar
+            </button>
+        </div>
+        <div class="box-resultado">
+            <!--
+                <div class="box-resultado-itens" style="display: flex; jutify-content: space-between" width: 100%>
+                    <h2>Produto</h2>
+                    <h2>R$ Valor</h2>
+                </div>
+            -->
+        </div>
+        <div class="box-somavalores">TOTAL R$ ...</div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
